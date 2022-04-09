@@ -2,7 +2,7 @@ import { View, Text } from "react-native";
 import React from "react";
 import GlobalStyles from "../../Styles/GlobalStyles";
 
-const CarrerScreen = () => {
+const CarrerScreen = ({ navigation }) => {
   return (
     <View style={GlobalStyles.container}>
       <Text>Carrer Screen</Text>

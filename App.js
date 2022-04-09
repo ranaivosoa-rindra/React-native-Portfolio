@@ -1,7 +1,6 @@
 import React from "react";
-import CarrerScreen from "./src/Screens/Carrer/CarrerScreen";
-import Home from "./src/Screens/Home/Home";
+import StackRoute from "./src/Route/StackRoute";
 
 export default function App() {
-  return <Home />;
+  return <StackRoute />;
 }
