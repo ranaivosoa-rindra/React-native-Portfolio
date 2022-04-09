@@ -7,7 +7,7 @@ const HomeStyles = StyleSheet.create({
   aboutMeContainer: {
     // backgroundColor: "red",
     width: "100%",
-    minHeight: "50%",
+    minHeight: "43%",
     alignItems: "center",
     paddingTop: StatusBar.currentHeight + 40,
   },
@@ -30,31 +30,53 @@ const HomeStyles = StyleSheet.create({
     height: 90,
     borderRadius: 100,
   },
-  body: {
-    // backgroundColor: "white",
-    width: "100%",
-    minHeight: "40%",
-  },
   iconsViewContainer: {
-    // backgroundColor: "white",
     height: 50,
     width: "100%",
     flexDirection: "row",
-    justifyContent: "center",
+    justifyContent: "space-around",
+    marginTop: 15,
+    paddingHorizontal: 90,
   },
   iconView: {
-    padding: 20,
     backgroundColor: "white",
     justifyContent: "center",
     alignItems: "center",
     borderRadius: 200,
-    width: 20,
-    height: 20,
+    width: 34,
+    height: 34,
+  },
+  body: {
+    // backgroundColor: "white",
+    width: "100%",
+    minHeight: "49%",
+  },
+  bloc: {
+    flexDirection: "row",
+    alignItems: "center",
+    padding: 30,
+  },
+  titles: {
+    color: "#fff",
+    fontWeight: "bold",
+    fontSize: 21,
+    paddingHorizontal: 18,
+    letterSpacing: 1,
+  },
+  logos: {
+    width: 57,
+    height: 57,
   },
   footer: {
-    // backgroundColor: "yellow",
     width: "100%",
     minHeight: "10%",
+    flexDirection: "row",
+    justifyContent: "flex-end",
+    paddingHorizontal: 20,
+  },
+  footerIcons: {
+    width: 40,
+    height: 40,
   },
 });
 

@@ -26,15 +26,15 @@ const StackRoute = () => {
           }}
         />
         <Stack.Screen
-          name="ProjectsScreen"
-          component={ProjectsScreen}
+          name="SkillsScreen"
+          component={SkillsScreen}
           options={{
             headerShown: false,
           }}
         />
         <Stack.Screen
-          name="SkillsScreen"
-          component={SkillsScreen}
+          name="ProjectsScreen"
+          component={ProjectsScreen}
           options={{
             headerShown: false,
           }}
