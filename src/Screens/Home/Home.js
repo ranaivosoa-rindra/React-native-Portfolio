@@ -1,13 +1,5 @@
-import {
-  View,
-  Text,
-  Image,
-  Button,
-  TouchableOpacity,
-  Linking,
-} from "react-native";
+import { View, Text, Image, TouchableOpacity, Linking } from "react-native";
 import React from "react";
-import GlobalStyles from "../../Styles/GlobalStyles";
 import BackgroundImage from "../../Components/BackgroundImage";
 import HomeStyles from "./HomeStyles";
 import StatusBarComp from "../../Components/StatusBarComp";
@@ -150,7 +142,7 @@ export default function Home({ navigation }) {
           <Image source={require(heartIcon)} style={HomeStyles.footerIcons} />
         </TouchableOpacity>
       </View>
-      <StatusBarComp />
+      <StatusBarComp hidden={false} />
     </View>
   );
 }

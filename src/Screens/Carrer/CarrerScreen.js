@@ -1,11 +1,27 @@
-import { View, Text } from "react-native";
-import React from "react";
-import GlobalStyles from "../../Styles/GlobalStyles";
+import { View } from "react-native";
+import React, { useState } from "react";
+import BackgroundImage from "../../Components/BackgroundImage";
+import StatusBarComp from "../../Components/StatusBarComp";
+import information from "../../Api/data";
+import CarrerStyles from "./CarrerStyles";
+import ReviewList from "./ReviewList";
+import { FlatList } from "react-native";
+import FooterIcons from "../../Components/FooterIcons";
 
 const CarrerScreen = ({ navigation }) => {
+  const [items, setItems] = useState(information);
+
   return (
-    <View style={GlobalStyles.container}>
-      <Text>Carrer Screen</Text>
+    <View style={CarrerStyles.container}>
+      <BackgroundImage />
+      <View style={CarrerStyles.body}>
+        <FlatList
+          data={items}
+          renderItem={({ item }) => <ReviewList id={item.id} item={item} />}
+        />
+      </View>
+      <FooterIcons navigation={navigation} nextScreen="SkillsScreen" />
+      <StatusBarComp hidden={true} />
     </View>
   );
 };
