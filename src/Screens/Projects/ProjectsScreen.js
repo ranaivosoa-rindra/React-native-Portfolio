@@ -12,7 +12,7 @@ import ProjectsList from "./ProjectsList";
 const ProjectsScreen = ({ navigation }) => {
   const [items, setItems] = useState(projectsInformation);
 
-  console.log(items);
+  // console.log(items);
 
   return (
     <View style={ProjectsStyle.container}>
